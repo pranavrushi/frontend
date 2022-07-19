@@ -10,6 +10,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title> SIME-BIT Mesra</title>
+        <link rel="icon" href="/SIME.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Component {...pageProps} />
