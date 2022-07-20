@@ -1,0 +1,33 @@
+/* Navbar */
+.bg_teal {
+    background-color: #0e918c;
+    padding: 1rem;
+}
+
+
+.dropdown-menu {
+    background-color: rgb(14, 145, 140);
+    z-index: 7;
+}
+
+.navbar {
+    text-align: left;
+    min-height: 15vh;
+}
+
+.navbar-nav li {
+    text-transform: uppercase;
+    padding-right: 1rem;
+}
+
+.navbar-nav li:last-child {
+    padding-right: 3rem;
+}
+
+.nav-link {
+    font-size: 1.2em;
+}
+
+.dropdown-item {
+    color: #f1f6f9;
+}
