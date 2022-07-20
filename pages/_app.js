@@ -13,10 +13,6 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title> SIME-BIT Mesra</title>
         <link rel="icon" href="/SIME.png" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        ></link>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 

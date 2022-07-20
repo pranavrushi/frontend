@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Footer.module.css";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
-    <footer className={`${styles.bg_teal}`}>
+    <footer className={`${styles.bg_teal} ${styles.myFooter}`}>
       <div className="container-fluid padding footer-section">
         <div className="row text-center padding justify-content-center">
           <div className="col-lg-5">
@@ -40,37 +41,38 @@ const Footer = () => {
             >
               <b>Email</b>-<br /> sime@bitmesra.ac.in
             </a>
-            <a
-              className="fab-icon"
-              href="http://www.facebook.com/sime.bitmesra"
-              target="_blank"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a
-              className="fab-icon"
-              href="http://www.linkedin.com/company/sime-bitmesra"
-              target="_blank"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a
-              className="fab-icon"
-              href="http://www.instagram.com/sime.bitmesra"
-              target="_blank"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a
-              className="fab-icon"
-              href="https://www.youtube.com/channel/UCAaEV7A5_aasDHtcoeupSJg"
-              target="_blank"
-            >
-              <i className="fab fa-youtube"></i>
-            </a>
+            <br />
+            <div className="my-2">
+              <SocialIcon
+                className="mx-1"
+                url="http://www.facebook.com/sime.bitmesra"
+                fgColor="#ffffff"
+                style={{ height: 35, width: 35 }}
+                target="_blank"
+              />
+              <SocialIcon
+                className="mx-1"
+                url="http://www.linkedin.com/company/sime-bitmesra"
+                fgColor="#ffffff"
+                style={{ height: 35, width: 35 }}
+                target="_blank"
+              />
+              <SocialIcon
+                className="mx-1"
+                url="http://www.instagram.com/sime.bitmesra"
+                fgColor="#ffffff"
+                style={{ height: 35, width: 35 }}
+                target="_blank"
+              />
+              <SocialIcon
+                className="mx-1"
+                url="https://www.youtube.com/channel/UCAaEV7A5_aasDHtcoeupSJg"
+                fgColor="#ffffff"
+                style={{ height: 35, width: 35 }}
+                target="_blank"
+              />
+            </div>
           </div>
-          <a href="http://www.google.com" class="fa fa-facebook" target="_blank"></a>
-          <a href="#" class="fa fa-twitter"></a>
         </div>
         <div className={styles.copyright}>
           Copyright ©2021 All Rights Reserved | SIME
