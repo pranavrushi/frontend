@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.fab-icon{
+  font-size: 1.75em;
+  padding-right: 0.75rem;
+}
