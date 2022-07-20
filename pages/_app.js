@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Footer from "../components/layouts/Footer";
+import Navbar from "../components/layouts/Navbar";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -15,7 +16,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/SIME.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
+      <Navbar />
       <Component {...pageProps} />
       <Footer />
     </>
