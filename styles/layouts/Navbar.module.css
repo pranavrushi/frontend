@@ -31,3 +31,12 @@
 .dropdown-item {
     color: #f1f6f9;
 }
+
+.navbar_text{
+    font-size: larger;
+}
+
+.myLink {
+    cursor: pointer;
+}
+

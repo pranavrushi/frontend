@@ -7,8 +7,10 @@ import Footer from "../components/layouts/Footer";
 import Navbar from "../components/layouts/Navbar";
 
 function MyApp({ Component, pageProps }) {
+  const [currPage, setCurrPage] = useState("home");
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.js");
+    import ("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
   return (
@@ -18,8 +20,8 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/SIME.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Navbar />
-      <Component {...pageProps} />
+      <Navbar currPage={currPage} />
+      <Component {...pageProps} setCurrPage={setCurrPage}/>
       <Footer />
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

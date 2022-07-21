@@ -5,15 +5,15 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/layouts/Navbar.module.css";
+import Dropdown from "react-bootstrap/Dropdown";
 
-function CollapsibleExample() {
+function CollapsibleExample({ currPage }) {
   return (
     <Navbar
-    sticky-top="true"
+      sticky-top="true"
       collapseOnSelect
-      
       expand="lg"
-      className={`${styles.bg_teal} sticky-top`}
+      className={`${styles.bg_teal} sticky-top ${styles.navbar_text}`}
       variant="dark"
     >
       <Container>
@@ -24,12 +24,18 @@ function CollapsibleExample() {
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="./index.html">
-                Home
-              </a>
-            </li>
+          <ul className="navbar-nav ml-auto mx-auto">
+            <Link href="/">
+              <li className="nav-item ">
+                <a
+                  className={`nav-link  ${currPage == "home" ? "active" : ""} ${
+                    styles.myLink
+                  }`}
+                >
+                  Home
+                </a>
+              </li>
+            </Link>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -145,6 +151,38 @@ function CollapsibleExample() {
               >
                 Our Events
               </a>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Research
+              </a>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a className="dropdown-item" href="./21-22season.html">
+                  2021-2022 Season
+                </a>
+                <a className="dropdown-item" href="./20-21season.html">
+                  2020-2021 Season
+                </a>
+              </div>
+            </li>
+            <li className="nav-item">
+              <Link href="/contact">
+                <a
+                  className={`nav-link ${
+                    currPage == "contact" ? "active" : ""
+                  }`}
+                >
+                  Contact
+                </a>
+              </Link>
             </li>
           </ul>
         </Navbar.Collapse>
