@@ -23,7 +23,7 @@ function CollapsibleExample({ currPage }) {
           </a>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse>
           <ul className="navbar-nav ml-auto mx-auto">
             <Link href="/">
               <li className="nav-item ">
@@ -36,7 +36,7 @@ function CollapsibleExample({ currPage }) {
                 </a>
               </li>
             </Link>
-            <NavDropdown id="nav-dropdown-dark-example" title="Social Media">
+            <NavDropdown title="Social Media">
               <NavDropdown.Item
                 href="https://www.facebook.com/sime.bitmesra"
                 target="_blank"
@@ -62,7 +62,10 @@ function CollapsibleExample({ currPage }) {
                 YouTube
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown id="nav-dropdown-dark-example" title="Our Team">
+            <NavDropdown
+              title="Our Team"
+              active={currPage == "team" ? "yes" : ""}
+            >
               <NavDropdown.Item href="#action/3.1">Core</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Research proceeding
@@ -78,9 +81,8 @@ function CollapsibleExample({ currPage }) {
             </NavDropdown>
 
             <NavDropdown
-              id="nav-dropdown-dark-example"
               title="Exergy"
-              
+              active={currPage == "exergy" ? "yes" : ""}
             >
               <Link href="/exergy/sept_2021" passHref>
                 <NavDropdown.Item>September 2021</NavDropdown.Item>
@@ -107,13 +109,16 @@ function CollapsibleExample({ currPage }) {
                 </a>
               </li>
             </Link>
-            <NavDropdown id="nav-dropdown-dark-example" title="Research">
-              <NavDropdown.Item href="#action/3.1">
-                2021-2022 Season
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                2020-2021 Season
-              </NavDropdown.Item>
+            <NavDropdown
+              title="Research"
+              active={currPage == "research" ? "yes" : ""}
+            >
+              <Link href="/research/season_2021_2022" passHref>
+                <NavDropdown.Item>2021-2022 Season</NavDropdown.Item>
+              </Link>
+              <Link href="/research/season_2020_2021" passHref>
+                <NavDropdown.Item>2020-2021 Season</NavDropdown.Item>
+              </Link>
             </NavDropdown>
 
             <li className="nav-item">
