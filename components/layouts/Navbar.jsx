@@ -76,12 +76,16 @@ function CollapsibleExample({ currPage }) {
               <NavDropdown.Item href="#action/3.3">Events</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Workshops</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown id="nav-dropdown-dark-example" title="Exergy">
-              <NavDropdown.Item href="#action/3.3">
-                September 2021
-              </NavDropdown.Item>
-            </NavDropdown>
 
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              className={`${currPage == "exergy" ? "active" : ""}`}
+              title="Exergy"
+            >
+              <Link href="/exergy/sept_2021" passHref>
+                  <NavDropdown.Item>September 2021</NavDropdown.Item>
+              </Link>
+            </NavDropdown>
             <li className="nav-item">
               <a
                 className="nav-link"
