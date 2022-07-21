@@ -1,11 +1,11 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/layouts/Navbar.module.css";
 import Dropdown from "react-bootstrap/Dropdown";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 function CollapsibleExample({ currPage }) {
   return (
@@ -36,101 +36,51 @@ function CollapsibleExample({ currPage }) {
                 </a>
               </li>
             </Link>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+            <NavDropdown id="nav-dropdown-dark-example" title="Social Media">
+              <NavDropdown.Item
+                href="https://www.facebook.com/sime.bitmesra"
+                target="_blank"
               >
-                SOCIAL MEDIA
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a
-                  className="dropdown-item"
-                  href="https://www.youtube.com/channel/UCAaEV7A5_aasDHtcoeupSJg/featured"
-                  target="_blank"
-                >
-                  Youtube
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="https://www.facebook.com/sime.bitmesra"
-                  target="_blank"
-                >
-                  FACEBOOK
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="https://www.instagram.com/sime.bitmesra/"
-                  target="_blank"
-                >
-                  INSTAGRAM
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="https://www.linkedin.com/company/sime-bitmesra"
-                  target="_blank"
-                >
-                  LINKEDIN
-                </a>
-              </div>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                Facebook
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://www.instagram.com/sime.bitmesra/"
+                target="_blank"
               >
-                Our Team
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="./core.html">
-                  Core
-                </a>
-                <a className="dropdown-item" href="./rp.html">
-                  Research proceeding
-                </a>
-                <a className="dropdown-item" href="./OPM.html">
-                  Operations and Management
-                </a>
-                <a className="dropdown-item" href="./iar.html">
-                  Industry and alumni relations
-                </a>
-                <a className="dropdown-item" href="./events.html">
-                  Events
-                </a>
-                <a className="dropdown-item" href="./workshop.html">
-                  Workshops
-                </a>
-              </div>
-            </li>
-
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+                Instagram
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://www.linkedin.com/company/sime-bitmesra"
+                target="_blank"
               >
-                Exergy
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="./exergy_sept21.html">
-                  September 2021
-                </a>
-              </div>
-            </li>
+                LinkedIn
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://www.youtube.com/channel/UCAaEV7A5_aasDHtcoeupSJg/featured"
+                target="_blank"
+              >
+                YouTube
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown id="nav-dropdown-dark-example" title="Our Team">
+              <NavDropdown.Item href="#action/3.1">Core</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Research proceeding
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">
+                Operations and Management
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">
+                Industry and alumni relations
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Events</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Workshops</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown id="nav-dropdown-dark-example" title="Exergy">
+              <NavDropdown.Item href="#action/3.3">
+                September 2021
+              </NavDropdown.Item>
+            </NavDropdown>
 
             <li className="nav-item">
               <a
@@ -153,27 +103,15 @@ function CollapsibleExample({ currPage }) {
                 </a>
               </li>
             </Link>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Research
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="./21-22season.html">
-                  2021-2022 Season
-                </a>
-                <a className="dropdown-item" href="./20-21season.html">
-                  2020-2021 Season
-                </a>
-              </div>
-            </li>
+            <NavDropdown id="nav-dropdown-dark-example" title="Research">
+              <NavDropdown.Item href="#action/3.1">
+                2021-2022 Season
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                2020-2021 Season
+              </NavDropdown.Item>
+            </NavDropdown>
+
             <li className="nav-item">
               <Link href="/contact">
                 <a
