@@ -3,7 +3,7 @@ import { SSRProvider } from "react-bootstrap";
 
 const Sept_2021 = ({ setCurrPage }) => {
   useEffect(() => {
-    setCurrPage("exergy");
+    setCurrPage("");
   }, []);
 
   return (
@@ -15,7 +15,7 @@ const Sept_2021 = ({ setCurrPage }) => {
         placeItems: "center",
       }}
     >
-      <h1 style={{ fontSize: "3em" }}>Exergy September 2021</h1>
+      <h1 style={{ fontSize: "3em",textAlign:"center" }}>Exergy September 2021</h1>
 
       <iframe
         allowFullScreen="allowfullscreen"
