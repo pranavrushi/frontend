@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { SSRProvider } from "react-bootstrap";
 
 const Sept_2021 = ({ setCurrPage }) => {
   useEffect(() => {
@@ -6,17 +7,15 @@ const Sept_2021 = ({ setCurrPage }) => {
   }, []);
 
   return (
-    <div>
-      <div
-        style={{
-          width: "100%",
-          padding: "2rem 0",
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "3em" }}>Exergy September 2021</h1>
-      </div>
+    <div
+      style={{
+        width: "100%",
+        padding: "2rem 0",
+        display: "grid",
+        placeItems: "center",
+      }}
+    >
+      <h1 style={{ fontSize: "3em" }}>Exergy September 2021</h1>
 
       <iframe
         allowFullScreen="allowfullscreen"
@@ -25,8 +24,8 @@ const Sept_2021 = ({ setCurrPage }) => {
         src="https://heyzine.com/flip-book/84c1252cb1.html"
         style={{
           border: "1px solid lightgray",
-          width: "90%",
-          height: "100%",
+          width: "90vw",
+          height: "80vh",
           minHeight: "500px",
         }}
       ></iframe>
