@@ -10,6 +10,8 @@ const season_2021_2022 = ({ setCurrPage }) => {
       <CoviKnowApp />
       <hr style={{ margin: "20px" }} />
       <AnalysisOfCoffeeManufacturing/>
+      <hr style={{ margin: "20px" }} />
+
     </>
   );
 };
