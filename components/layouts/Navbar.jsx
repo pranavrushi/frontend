@@ -25,7 +25,7 @@ function CollapsibleExample({ currPage }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <ul className="navbar-nav ml-auto mx-auto">
-            <Link href="/">
+          <Link href="/">
               <li className="nav-item ">
                 <a
                   className={`nav-link  ${currPage == "home" ? "active" : ""} ${
@@ -142,16 +142,17 @@ function CollapsibleExample({ currPage }) {
                 SPARK
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="./eventspage.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Our Events
-              </a>
-            </li>
+            <Link href="/events">
+              <li className="nav-item ">
+                <a
+                  className={`nav-link  ${currPage == "events" ? "active" : ""} ${
+                    styles.myLink
+                  }`}
+                >
+                  Our Events
+                </a>
+              </li>
+            </Link>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
