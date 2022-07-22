@@ -1,6 +1,7 @@
 import React from "react";
 import AnalysisOfCoffeeManufacturing from "../../components/research/21_22/AnalysisOfCoffeeManufacturing";
 import CoviKnowApp from "../../components/research/21_22/CoviKnowApp";
+import DroneForAnimalHusbandry from "../../components/research/21_22/DroneForAnimalHusbandry";
 import CommonText from "../../components/research/CommonText";
 
 const season_2021_2022 = ({ setCurrPage }) => {
@@ -10,6 +11,8 @@ const season_2021_2022 = ({ setCurrPage }) => {
       <CoviKnowApp />
       <hr style={{ margin: "20px" }} />
       <AnalysisOfCoffeeManufacturing/>
+      <hr style={{ margin: "20px" }} />
+      <DroneForAnimalHusbandry />
       <hr style={{ margin: "20px" }} />
 
     </>
