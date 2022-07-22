@@ -64,20 +64,28 @@ function CollapsibleExample({ currPage }) {
             </NavDropdown>
             <NavDropdown
               title="Our Team"
-              active={currPage == "team" ? "yes" : ""}
+              active={currPage == "ourTeam" ? "yes" : ""}
             >
-              <NavDropdown.Item href="#action/3.1">Core</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Research proceeding
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Operations and Management
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Industry and alumni relations
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Events</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Workshops</NavDropdown.Item>
+              <Link href="/our_team/core" passHref>
+                <NavDropdown.Item>Core</NavDropdown.Item>
+              </Link>
+              <Link href="/our_team/research_proceeding" passHref>
+                <NavDropdown.Item>Research proceeding</NavDropdown.Item>
+              </Link>
+              <Link href="/our_team/operations_and_management" passHref>
+                <NavDropdown.Item>Operations and Management</NavDropdown.Item>
+              </Link>
+              <Link href="/our_team/industry_and_alumni_relations" passHref>
+                <NavDropdown.Item>
+                  Industry and alumni relations
+                </NavDropdown.Item>
+              </Link>
+              <Link href="/our_team/events" passHref>
+                <NavDropdown.Item>Events</NavDropdown.Item>
+              </Link>
+              <Link href="/our_team/workshops" passHref>
+                <NavDropdown.Item>Workshops</NavDropdown.Item>
+              </Link>
             </NavDropdown>
 
             <NavDropdown
