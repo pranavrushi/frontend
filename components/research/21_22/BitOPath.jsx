@@ -7,13 +7,13 @@ const BitOPath = () => {
       <div className="text-center my-4">
         <h2>BIT-O-PATH</h2>
         <Image
-        className="mx-2 my-3"
+          className="mx-2 my-3"
           src="/research/21_22/bit_o_path/path1.jpeg"
           height="480px"
           width="720px"
         />
         <Image
-        className="mx-2 my-3"
+          className="mx-2 my-3"
           src="/research/21_22/bit_o_path/path2.jpeg"
           height="480px"
           width="720px"
@@ -35,12 +35,12 @@ const BitOPath = () => {
           Abhishek Pandey, Aditya Raj Choudhary, Anuj Agrawal , Krishna Kumar
           Singh Garia
         </b>
-        <p className="my-2">
-          Website link:{" "}
-          <a href="http://bitfoodpoint.xyz/" target="_blank">
-            BIT-O-PATH
-          </a>
-        </p>
+      </p>
+      <p className="my-2">
+        Website link:{" "}
+        <a href="http://bitfoodpoint.xyz/" target="_blank">
+          BIT-O-PATH
+        </a>
       </p>
     </div>
   );
