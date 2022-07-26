@@ -6,7 +6,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/carousel/industry_4.jpg"
+          src="/mainPage/carousel/industry_4.jpg"
           alt="First slide"
           style={{ height: "80vh", width: "100vw" }}
         />
@@ -17,7 +17,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/carousel/welding_engineer.jpg"
+          src="/mainPage/carousel/welding_engineer.jpg"
           alt="Second slide"
           style={{ height: "80vh", width: "100vw" }}
         />
@@ -33,7 +33,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/carousel/future-work-digital-technology-economy.jpg"
+          src="/mainPage/carousel/future-work-digital-technology-economy.jpg"
           alt="Third slide"
           style={{ height: "80vh", width: "100vw" }}
         />
@@ -49,7 +49,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/carousel/teamwork-img.jpg"
+          src="/mainPage/carousel/teamwork-img.jpg"
           alt="Fourth slide"
           style={{ height: "80vh", width: "100vw" }}
         />
@@ -61,7 +61,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/carousel/steel-pipelines-cables-plant.jpg"
+          src="/mainPage/carousel/steel-pipelines-cables-plant.jpg"
           alt="Fifth slide"
           style={{ height: "80vh", width: "100vw" }}
         />
