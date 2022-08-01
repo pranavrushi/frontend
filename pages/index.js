@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 import Carousel from "../components/mainPage/Carousel";
 import Sponsor from "../components/mainPage/Sponsor";
 import AboutSection from "../components/mainPage/AboutSection";
+import WhatWeDo from "../components/mainPage/WhatWeDo";
 
 export default function Home({ setCurrPage }) {
   useEffect(() => {
@@ -14,7 +15,8 @@ export default function Home({ setCurrPage }) {
     <div>
       <Carousel />
       <AboutSection />
-      <hr style={{marginLeft:"20%", marginRight:"20%"}} className="my-4"/>
+      <hr style={{ marginLeft: "20%", marginRight: "20%" }} className="my-4" />
+      <WhatWeDo />
       <Sponsor />
     </div>
   );

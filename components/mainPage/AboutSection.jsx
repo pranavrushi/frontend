@@ -40,8 +40,8 @@ const AboutSection = () => {
               height="475"
               style={{ border: "none ,overflow:hidden" }}
               scrolling="no"
-              frameborder="0"
-              allowTransparency="true"
+              frameBorder="0"
+              allowtransparency="true"
               loading="lazy"
               allow="encrypted-media"
             ></iframe>
@@ -60,9 +60,9 @@ const AboutSection = () => {
           height="315"
           src="https://www.youtube.com/embed/XFM-Gd8dO1g"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </div>
