@@ -113,7 +113,7 @@ function CollapsibleExample({ currPage }) {
                     currPage == "events" ? "active" : ""
                   } ${styles.myLink}`}
                 >
-                  Our Events
+                  Our-Events
                 </a>
               </li>
             </Link>
