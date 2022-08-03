@@ -38,7 +38,7 @@ const workshops = ({ setCurrPage }) => {
       <CardComponent
         name="Rakesh Raman"
         position="Executive"
-        img="/ourTeam/k21/rakesh_raman.jpg"
+        img="/ourTeam/k21/rakesh_raman.JPG"
         linkedin="https://www.linkedin.com/in/rakesh-raman-32b23a232"
       />
     </div>

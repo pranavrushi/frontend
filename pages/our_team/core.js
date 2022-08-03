@@ -14,7 +14,7 @@ const core = ({ setCurrPage }) => {
       <CardComponent
         name="Dr. L.N. Pattanaik"
         position="Faculty advisor"
-        img="/ourTeam/prof/Pattnaik_Sir.jpg"
+        img="/ourTeam/prof/Pattnaik_sir.jpg"
         linkedin="https://www.linkedin.com/in/dr-l-n-pattanaik-15756975/"
       />
       <CardComponent
