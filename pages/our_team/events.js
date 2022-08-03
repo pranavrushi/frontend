@@ -38,7 +38,7 @@ const events = ({ setCurrPage }) => {
       <CardComponent
         name="Rohit Pande"
         position="Strategist"
-        img="/ourTeam/k20/rohit.jpeg"
+        img="/ourTeam/k20/rohit.jpg"
         linkedin="https://www.linkedin.com/in/rohit-pande-0a5846237/"
       />
       <CardComponent

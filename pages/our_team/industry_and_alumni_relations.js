@@ -8,7 +8,9 @@ const industry_and_alumni_relations = ({ setCurrPage }) => {
 
   return (
     <div className="text-center justify-content-center my-4">
-      <p style={{ color: " #0e918c", fontSize: "29px" }}>Industry_and_Alumni_Relations</p>
+      <p style={{ color: " #0e918c", fontSize: "29px" }}>
+        Industry and Alumni Relations
+      </p>
       <hr style={{ width: "200px", margin: "auto" }} />
       <br />
       <CardComponent
