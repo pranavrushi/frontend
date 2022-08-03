@@ -31,8 +31,8 @@ const WhatWeDo = () => {
           </div>
           <div className="col-md-2">
             <Image
-              width="100px"
-              height="100px"
+              width="150px"
+              height="150px"
               src="/mainPage/WhatWeDo/indVisits.png"
               alt="industrial vistis.icon"
             />
@@ -55,8 +55,8 @@ const WhatWeDo = () => {
         <div className="row padding justify-content-center align-items-stretch">
           <div className="col-md-2">
             <Image
-              width="100px"
-              height="100px"
+              width="150px"
+              height="150px"
               className="research-image"
               src="/mainPage/WhatWeDo/event.png"
               alt="research.icon"
@@ -77,8 +77,8 @@ const WhatWeDo = () => {
           </div>
           <div className="col-md-2">
             <Image
-              width="100px"
-              height="100px"
+              width="150px"
+              height="150px"
               src="/mainPage/WhatWeDo/workshop.png"
               alt="research.icon"
             />
@@ -102,8 +102,8 @@ const WhatWeDo = () => {
         <div className="row padding justify-content-center align-items-stretch">
           <div className="col-md-2">
             <Image
-              width="100px"
-              height="100px"
+              width="150px"
+              height="150px"
               src="/mainPage/WhatWeDo/college.png"
               alt="research.icon"
             />
@@ -123,8 +123,8 @@ const WhatWeDo = () => {
           </div>
           <div className="col-md-2">
             <Image
-              width="100px"
-              height="100px"
+              width="150px"
+              height="150px"
               src="/mainPage/WhatWeDo/tent.png"
               alt="research.icon"
             />
